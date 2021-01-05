@@ -15,7 +15,7 @@ ENV NODE_PATH=/install/node_modules
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY package*.json /install/
+# COPY package*.json /install/
 
 WORKDIR /install
 
