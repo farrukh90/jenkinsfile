@@ -1,10 +1,9 @@
 config:
   dockerfile: .woloxci/Dockerfile
-  project_name: some-project-name
+  project_name: some-rails-project
 
 services:
-  - postgresql
-  - redis
+  - mssql
 
 steps:
   analysis:
@@ -26,3 +25,8 @@ environment:
   GIT_COMMITTER_NAME: a
   GIT_COMMITTER_EMAIL: b
   LANG: C.UTF-8
+
+jenkinsEnvironment:
+  - JENKINS_URL
+
+timeout: 600
